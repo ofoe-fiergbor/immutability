@@ -8,14 +8,14 @@ All information contained in each instance of a mutable object is created and is
 `String` is an example of an immutable type. A `String` object always represents the same string.
 Since `String` is immutable, once created, a `String` object always has the same value.
 
-The `String` class comes with a `.append()` object that tempts you into believing that merely 
-appending a string to your current string object mutates it. That's not the case.
+The `String` class comes with a `.concat()` object that tempts you into believing that merely
+concatenating a string to your current string object mutates it. That's not the case.
 
-Under the hood, `.append()` actually copies your existing string object, 
-appends a string to it, then return a new `String` object. Hence, pointing your variable to another memory reference. 
+Under the hood, `.concat()` actually copies your existing string object,
+concatenates a string to it, then return a new `String` object. Hence, pointing your variable to another memory reference. 
 
 
-By contrast, `StringBuilder` objects are mutable. This class has methods that change the value of the object, 
+By contrast, `StringBuilder` objects are mutable. This class has methods, `.append()` that change the value of the object, 
 rather than just returning new values.
 
 Other java platform library primitive classes include boxed primitive classes, BigInteger and BigDecimal
