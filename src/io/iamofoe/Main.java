@@ -8,26 +8,26 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        ImmutableClass immutableClass = new ImmutableClass(1, List.of(10,20,30));
+        Student student = new Student(1, List.of(10,20,30));
 
         /**Before**/
-        System.out.println(immutableClass.getX());
-        System.out.println(immutableClass.getGrades());
+        System.out.println(student.getId());
+        System.out.println(student.getGrades());
 
         /**attempt to mutate List<Integer> grades;**/
-        immutableClass.getGrades().add(50);
-        immutableClass.getGrades().add(60);
+        student.getGrades().add(50);
+        student.getGrades().add(60);
 
         /**Returns with no change to class**/
-        System.out.println(immutableClass.getGrades());
+        System.out.println(student.getGrades());
 
         /** Application in immutable array **/
-        ImmutableClass immutableClass1 = new ImmutableClass(1, List.of(10,20,30));
-        ImmutableClass immutableClass2 = new ImmutableClass(1, List.of(10,20,30));
-        ImmutableClass immutableClass3 = new ImmutableClass(1, List.of(10,20,30));
+        Student student1 = new Student(1, List.of(10,20,30));
+        Student student2 = new Student(1, List.of(10,20,30));
+        Student student3 = new Student(1, List.of(10,20,30));
 
-        List<ImmutableClass> immutableClassList = Collections.unmodifiableList(List.of(immutableClass1, immutableClass2, immutableClass3));
-        System.out.println(immutableClassList);
+        List<Student> studentList = Collections.unmodifiableList(List.of(student1, student2, student3));
+        System.out.println(studentList);
 
         /**throws UnsupportedOperationException**/
 //        immutableClassList.add(immutableClass);

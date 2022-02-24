@@ -3,16 +3,16 @@ package io.iamofoe;
 import java.util.ArrayList;
 import java.util.List;
 
-final class ImmutableClass {
-    private final int x;
+final class Student {
+    private final int id;
     private final List<Integer> grades;
 
-    public ImmutableClass(int x, List<Integer> grades) {
-        this.x = x;
+    public Student(int id, List<Integer> grades) {
+        this.id = id;
         this.grades = grades;
     }
-    public int getX() {
-        return this.x;
+    public int getId() {
+        return this.id;
     }
 
     public List<Integer> getGrades() {
