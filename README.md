@@ -1,4 +1,4 @@
-##IMMUTABLE DATA TYPES
+## IMMUTABLE DATA TYPES
 
 Sometimes we want to create an object of a specific type whose contents cannot be changed once
 it has been created. Such objects are immutable objects with an immutable class.
@@ -20,7 +20,7 @@ rather than just returning new values.
 
 Other java platform library primitive classes include boxed primitive classes, BigInteger and BigDecimal
 
-##To create an immutable data type / class:
+## To create an immutable data type / class:
 <ol>
     <li>The class itself can't be extended.</li>
     <li>All data fields must be private and final.</li>
@@ -28,7 +28,7 @@ Other java platform library primitive classes include boxed primitive classes, B
     <li>There can't be any getter method that returns a mutable data field.</li>
 </ol>
 
-###Example1:
+### Example1:
 ```
 final class ImmutableClass {
     private final int x;
@@ -41,7 +41,7 @@ final class ImmutableClass {
     }
 }
 ```
-###Example2:
+### Example2:
 ```
 final class ImmutableClass {
     private final int x;
@@ -60,13 +60,13 @@ final class ImmutableClass {
     }
 }
 ```
-###Pros:
+### Pros:
 <ul>
     <li>Safe from bugs and more secure.</li>
     <li>Easy to understand.</li>
 </ul>
 
-###Cons:
+### Cons:
 <ul>
     <li>The require a separate object for each distinct value.</li>
 </ul>
