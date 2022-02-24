@@ -15,7 +15,7 @@ Under the hood, `.concat()` actually copies your existing string object,
 concatenates a string to it, then return a new `String` object. Hence, pointing your variable to another memory reference. 
 
 
-By contrast, `StringBuilder` objects are mutable. This class has methods, `.append()` that change the value of the object, 
+By contrast, `StringBuilder` objects are mutable. This class has methods, eg.`.append()`, that change the value of the object, 
 rather than just returning new values.
 
 Other java platform library primitive classes include boxed primitive classes, BigInteger and BigDecimal
